@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 100 900;
+  font-family: "Karla", sans-serif;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan-2: hsl(179, 50%, 54%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--Light-Gray);
+  }
+}
+
+button {
+  width: 100%;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: var(--Bright-Yellow);
+  border-radius: 4px;
+  color: var(--Light-Gray);
+  border: 0;
+  outline: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  display: grid;
+  max-width: 660px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subscription-frame {
+  display: grid;
+}
+
+/* Media Query for screen break */
+
+@media (min-width: 660px) {
+  main {
+    grid-template-rows: 200 1fr;
+  }
+
+  .subscription-frame {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sub-text {
+    font-size: 16px;
+    color: var(--Grayish-Blue);
+    min-width: 550px;
+    line-height: 25px;
+  }
+
+  .sub-hero-title {
+    min-width: 350px;
+  }
+}
+
+.community,
+.col1 {
+  padding: 35px;
+}
+
+.hero-title {
+  color: var(--Cyan);
+}
+.sub-hero-title {
+  font-size: 15px;
+  color: var(--Bright-Yellow);
+  margin: 25px 0 20px;
+  max-width: 245px;
+}
+
+.sub-text {
+  font-size: 16px;
+  color: var(--Grayish-Blue);
+  max-width: 245px;
+  line-height: 25px;
+}
+
+.col {
+  background: var(--Cyan);
+}
+
+.col2 {
+  background: var(--Cyan-2);
+}
+
+.col-title {
+  color: var(--Light-Gray);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.amount {
+  color: var(--Light-Gray);
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.amount span {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.access-note {
+  color: var(--Light-Gray);
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.col2-title {
+  color: var(--Light-Gray);
+  margin-bottom: 15px;
+}
+
+.description {
+  max-width: 210px;
+  line-height: 20px;
+  color: var(--Light-Gray);
+  font-size: 15px;
+  padding-right: 15px;
+  /* background: red; */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
